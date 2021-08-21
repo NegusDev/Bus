@@ -246,20 +246,28 @@ img {
 
 
 @media only screen and (max-width: 768px) {
-  .aside {
-    /*display: none;*/
-  }
+  .
   .navbar-toggler {
     display: block;
   }
- 
+ .strip {
+  overflow: hidden;
+ }
 .sidebar_inner .profile_info .profile_img {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 90px;
+  height: 90px;
   overflow: hidden;
   background: #fff;
   border-radius: 50%;
+}
+.logo a {
+  position: relative;
+  color: var(--secondary-color);
+  font-size: 28px;
+  font-family: var(--subtitle-font);
+  font-style: italic;
+  text-align: center;
 }
 .sidebar_inner .profile_info .profile_img img {
   position: absolute;
