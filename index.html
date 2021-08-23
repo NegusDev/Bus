@@ -20,7 +20,6 @@
     <div class="row">
       <div class="col-lg-2 ">
         <nav class=" navbar navbar-expand-md">
-        <div class="bg_shadow"></div>
         <div class="collapse navbar-collapse" id="navbarNav">
         <div class="sidebar_inner">
           <div class="close">
@@ -46,7 +45,7 @@
         </div>
         </nav>
       </div>
-      <div class="col-lg-10 ">
+      <div class="col-lg-10">
         <header id="header">
           <div class="strip d-flex justify-content-between align-items-center  px-3 py-1 m-0">
               <button class="navbar-toggler my-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,9 +60,75 @@
               </div>
           </div>
         </header>
-       <div class="box">
-         
-       </div>
+        <!-- SEARCH SECTION -->
+        <section id="search_section" class="search_section">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="search-bar text-center  my-2">
+                  <button type="button" class="toggle-btn">
+                    <i class="fas fa-search "></i>
+                  </button>
+
+                  <form method="GET" class="form my-2" id="form" action="">
+                    <div class="form-search mb-3">
+                     <div class="form-floating">
+                      <input type="text" class="form-control" id="from" placeholder="Kampala">
+                      <label for="from" class="form-label">from</label>
+                     </div>
+                     <div class="mb-3 form-floating">
+                      <input type="text" class="form-control" id="to" placeholder="Mbarara">
+                      <label for="to" class="form-label">to</label>
+                     </div>
+                    </div>
+                    <div class="form-search mb-3">
+                       <div class="mb-3 form-floating">
+                      <input type="date" class="form-control" id="to" placeholder="Mbarara">
+                      <label for="to" class="form-label">journey date</label>
+                     </div>
+                    </div>
+
+                    <div class="my-2 d-flex justify-content-center">
+                      <button type="submit" class="submit-button form-control w-50">Search buses</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- BUS SECTION -->
+        <section class="bus mt-2">
+          <div class="container">
+            <small class="fw-bolder">Available deals today <i class="fas fa-angle-down"></i></small>
+            <div class="row my-2">
+              <div class="col-12 col-md-6">
+                <div class="busBox  py-3 px-2">
+                  <div class="busImg float-start w-25">
+                    <img src="assets/img/car.png" class="img-field">                    
+                  </div>
+                  <div class="trip-info float-start w-75 mx-auto">
+                    <h2 class="heading-6 text-center">UGX 15000</h2>
+                    <hr class="m-0">
+                    <div class="location d-flex justify-content-around">
+                      <p class="from"><i class="fas fa-map-marker-alt me-2"></i>Kamapala</p>
+                      <p class="transit"><i class="fas fa-bus"></i></p>
+                      <p class="to">Gulu</p>
+                    </div>
+                    <div class="time d-flex justify-content-evenly m-0">
+                      <p class="from-time"><Small><i class="fas fa-clock me-2"></i>09:00AM</Small></p>
+                      <p class="transit-time"><small>5hrs</small></p>
+                      <p class="to-time"><small>01:00PM</small></p>
+                    </div>
+
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- X BUS SECTION X -->
       </div>
      
 
@@ -79,7 +144,6 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/aos.js" ></script>
-<script src="assets/js/index.js"></script>
 <script src="assets/js/main.js"></script>
 
 </body>

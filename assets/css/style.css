@@ -179,12 +179,11 @@ img {
   display: block;
 }
 
-
-.strip {
-  background: var(--primary-color);
-
-
+#header {
+   background: var(--primary-color);
 }
+
+
 .strip button {
   padding: 0 !important;
 }
@@ -246,7 +245,7 @@ img {
 
 
 @media only screen and (max-width: 768px) {
-  .
+
   .navbar-toggler {
     display: block;
   }
@@ -297,22 +296,103 @@ img {
 .close {
   display: block;
 }
-.about-info p {
-  letter-spacing: 2px;
-  font-size: 1em;
-  text-align: center;
+.toggle-btn {
+  border: 1px solid var(--border-color);
+  background: var(--secondary-color);
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
+  color: #fff;
 }
-.about-info h4{
-  letter-spacing: 2px;
-  text-align: center;
-  line-height: normal;
-  font-family: ink free;
-  text-transform: uppercase;
+.toggle-btn .fas {
+  padding:.7rem 1rem;
+}
+.form {
+  display: none;
+}
+.form-search {
+  /*border: 1px solid black;*/
+  text-align: left;
+  padding: 20px;
+  box-shadow: var(--box-shadow);
+  background: #fff;
+  border-radius: 16px;
 }
 .form-button{
   margin-top: 5px;
   padding: .3rem .5rem;
   border-radius: 10px;
+}
+.form-search .form-label {
+  color: #767676;
+  text-transform: capitalize;
+  font-weight: 700;
+  font-size: 14px;
+  margin: 0;
+  font-family: var(--title-color);
+}
+.form-search input {
+  padding: 10px auto;
+  border: none;
+  background: transparent;
+  width: 80%;
+  font-size: 16px;
+  font-family: var(--title-font);
+  text-transform: capitalize;
+  border-radius: unset;
+  border-bottom: 1px solid #767676;
+}
+.form-search input:focus,
+.form-search input:active {
+  outline: transparent;
+}
+.submit-button {
+  padding: .4rem .5rem;
+  border-radius: 10px;
+  background: var(--secondary-color);
+  border: none;
+  color: #fff;
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  box-shadow: var(--box-shadow);
+
+}
+.busBox {
+  position: relative;
+  overflow: hidden;
+  clear: both;
+  border-radius: 1rem;
+  box-shadow: var(--box-shadow),
+              -12px -12px 24px rgba(255,255,255,0.5);
+
+}
+.busImg {
+  position: relative;
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+}
+.busImg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.location {
+  margin: .7rem 0 0 0 ;
+  color: var(--text-color);
+  font-family: sans-serif;
+}
+.location p {
+  padding: 0 auto;
+  margin: 0;
+}
+.time {
+  color: var(--text-color);
+  font-family: sans-serif;
+
 }
 
 .socila-links li a {
