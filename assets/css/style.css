@@ -181,6 +181,7 @@ img {
 
 #header {
    background: var(--primary-color);
+   overflow: hidden;
 }
 
 
@@ -243,6 +244,20 @@ img {
   opacity:0.5;
 }
 
+/* PAYMENT PAGE */
+.subtitle-section {
+  /*width: 95%;*/
+  text-align: center;
+  margin: 0 auto;
+}
+.subtitle p {
+  background: #ccc;
+  color: var(--text-color);
+  font-weight: bold;
+  font-family: sans-serif;
+  letter-spacing: .1px;
+  font-size: 14px;
+}
 
 @media only screen and (max-width: 768px) {
 
@@ -363,13 +378,37 @@ img {
   clear: both;
   border-radius: 1rem;
   box-shadow: var(--box-shadow),
-              -12px -12px 24px rgba(255,255,255,0.5);
+              -8px -8px 8px 0 rgba(255,255,255,0.5);
 
+}
+.bus-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+
+}
+.bus-name h4,h3 {
+  /*background: var(--secondary-color);*/
+  font-family: sans-serif;
+  letter-spacing: unset;
+}
+.bus-info h4 {
+  font-size: 20px;
+}
+.pay {
+  font-size: 25px;
+  font-weight: bolder;
+  letter-spacing: unset;
+}
+.trip {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-gap: 6px;
 }
 .busImg {
   position: relative;
   width: 100%;
-  height: 150px;
+  height: 100%;
   overflow: hidden;
 }
 .busImg img {
@@ -389,15 +428,246 @@ img {
   padding: 0 auto;
   margin: 0;
 }
+.time p {
+  padding: 0 auto;
+  margin: 0;
+}
+.info {
+  padding: 0;
+  margin: 10px 0;
+}
 .time {
   color: var(--text-color);
   font-family: sans-serif;
+  margin: 0 ;
 
 }
+.departs,.seats {
+  position: relative;
+  color: #000;
+  text-align: center;
+   box-shadow: var(--box-shadow),
+              -12px -12px 12px 0 rgba(255,255,255,0.5);
+  margin:0 10px ;
+  letter-spacing: unset;
+  font-family: sans-serif;
+  border-radius: 10px;
+  background: var(--gradient);
 
-.socila-links li a {
-  margin: 7px 0;
-  border: none;
 }
+.departs p,.seats p {
+  font-size: 14px;
+  padding: 5px ;
+}
+.book-btn {
+  margin-top: 10px;
+  /*background: var(--secondary-color);*/
+  /*width: 75%;*/
+}
+.book-btn a {
+   background: var(--secondary-color);
+   color: #fff;
+   font-family: sans-serif;
+  border-radius: 22px;
+
+}
+/* SELECT SEAT CSS */
+.back-home {
+  /*padding: 12px 10px 0 10px;*/
+  padding-left: 20px;
+  /*background: red;*/
+
+}
+.back-home a{
+  /*background: red;*/
+  color: #ccc;
+  font-size: 25px;
+
+  
+  
+}
+.back-select a{
+  /*background: red;*/
+  color: #ccc;
+  font-size: 25px;
+
+  
+  
+}
+.location-seat {
+  font-size: 16px;
+  padding: 12px 10px 0 10px;
+  font-family: var(--title-font) !important;
+  color: #ccc;
+
+}
+.location-seat p {
+  margin-left:8px ;
+}
+.seat-color {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 6px;
+   box-shadow: var(--box-shadow),
+              -12px -12px 12px 0 rgba(255,255,255,0.5);
+   padding: .5rem auto; 
+   overflow: hidden;
+   border-radius: 22px;
+}
+.seat-color > div {
+  background: #1111;
+}
+.color {
+  width: 20px;
+  height: 20px;
+  border-radius: 50% ;
+  position: relative;
+  background: red;
+
+}
+.red {
+  background: var(--secondary-color);
+}
+.green {
+  background: var(--primary-color);
+}
+.grey {
+  background: #ccc;
+}
+.seat-colors { 
+  font-size: 12px;
+  position: relative;
+  font-family: sans-serif;
+  text-align: center;
+  font-weight: 700;
+  /*background: #ccc;*/
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  /*margin: 0 auto;*/
+  text-transform: capitalize;
+
+}
+.bus-section {
+  box-shadow: 0px 10px 30px rgba(57,56,61,0.205),
+               -9px -9px -9px 0  rgba(255,255,255,0.5);
+}
+.whole-bus  {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 6px;
+  border: 2px solid black;
+  border-radius: 5px;
+  overflow: hidden; 
+
+}
+.whole-bus > div {
+  /*background: var(--secondary-color);*/
+  height: 60px;
+  /*margin: 1px 0;*/
+  padding: 5px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /*grid-gap: 6px;*/
+} 
+.column {
+   /*background: var(--primary-color);*/
+   /*margin-left: 5px;*/
+   /*margin-right: 5px;*/
+}
+.column .seat {
+  /*padding: 6px 8px;*/
+  background: #ccc;
+  width: 38px;
+  height: 40px;
+  margin: 0 auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: inset 0px 10px 30px rgba(57,56,61,0.205),
+              inset -9px -9px -9px 0  rgba(255,255,255,0.5);
+  font-weight: bold;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+.column .seat.booked {
+  background: var(--primary-color);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.column .seat.selected {
+  background: var(--secondary-color);
+  color: #fff;
+}
+.column .seat:not(.booked):hover {
+  cursor: pointer;
+}
+p.text {
+  margin: 10px auto;
+  font-family: monospace;
+}
+
+p.text span {
+  color: var(--secondary-color);
+  font-family: monospace;
+}
+
+/* PAYMENT PAGE */
+.travel-summary {
+  box-shadow: var(--box-shadow);
+  border-radius: 22px;
+  padding: 10px 15px;
+}
+.travel-summary h5 {
+  font-family: sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+}
+.subtitle-travel h6 {
+  font-size: 12px;
+  font-family: var(--subtitle-font);
+  font-weight: 500;
+}
+.subtitle-travel h6:first-child{
+  margin-bottom: 0px;
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.subtitle-travel p {
+  font-size: 12px;
+  font-family: var(--subtitle-font);
+}
+ .total {
+  font-weight: 500;
+  font-family: monospace;
+  margin-top: 10px;
+  text-transform: capitalize;
+ }
+ .total span {
+  margin-left: 5px;
+  font-family: var(--subtitle-font);
+  font-weight: bold;
+}
+
+.pay-methods {
+  font-family: monospace;
+  /*font-weight: bold;*/
+}
+.pay-methods button {
+    font-weight: bold;
+
+}
+.pay-methods button i {
+
+    
+}
+
+
+
 
 }
