@@ -1,8 +1,9 @@
 <?php
+declare(strict_types=1);
 include_once('Config.php');
 
-$id = (int) $_GET['unique_id'];
-$unique_id = $Seat->getTravelinfo($id);
+$bus_id = (int) $_GET['id'];
+$id = $Bus->getBusById($bus_id);
 
 $View->header();
 require_once('Templates/Sections/_select_Seat_header.php');

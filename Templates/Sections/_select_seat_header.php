@@ -5,9 +5,9 @@
       </div>
       <div class="">
         <div class="location-seat d-flex justify-content-between">
-          <p class="from"><?php $unique_id['from_city'] ?></p>
+          <p class="from"><?= $id['from_city'] ?></p>
           <p class="transit">To</p>
-          <p class="to"><?php $unique_id['to_city'] ?></p>
+          <p class="to"><?= $id['to_city'] ?></p>
         </div>
     </div>
   </div>

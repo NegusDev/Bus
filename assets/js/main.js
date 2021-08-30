@@ -25,12 +25,6 @@ populateUI();
 let ticketPrice = +amount.value;
 
 
-// 
-function setPriceData(priceIndex, ticketPrice) {
-	localStorage.setItem('selectedPriceindex', priceIndex);
-
-}
-
 // UPDATE TOTAL AND COUNT ID
 function updateSelectedcount() {
 	const selectedSeats = document.querySelectorAll('.bus-row .seat.selected');
