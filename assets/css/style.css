@@ -10,7 +10,8 @@
   --border-color:#201f1f17 ;
   --gradient:linear-gradient(90deg,#4458dc 0%, #844fee 100%);
   --shadow:0px 10px 30px rgba(118,85,255,0.3);
-  --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+  --box-shadow: 10px 10px 10px 10px rgba(57,56,61,0.205),
+  -10px -10px 10px 10px rgba(57,56,61,0.205);
 
   /*fonts*/
   --body-font: "BerkshireSwash",serif;
@@ -387,16 +388,17 @@ img {
   grid-gap: 10px;
 
 }
-.bus-name h4,h3 {
+.bus-name h4{
   /*background: var(--secondary-color);*/
   font-family: sans-serif;
   letter-spacing: unset;
 }
+
 .bus-info h4 {
   font-size: 20px;
 }
 .pay {
-  font-size: 25px;
+  font-size: 18px;
   font-weight: bolder;
   letter-spacing: unset;
 }

@@ -11,7 +11,7 @@
 <!-- <link rel="stylesheet" type="text/css" href="assets/css/owl.theme.default.css"> -->
 <link rel="stylesheet" type="text/css" href="./assets/css/aos.css">
 <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-<link rel="manifest"  href="manifest.json">
+<!-- <link rel="manifest"  href="manifest.json"> -->
 <link rel="apple-touch-icon" href="./assets/img/icon-144.png">
 <link rel="shortcut icon" href="./assets/img/icon-144.webp">
 </head>
