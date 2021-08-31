@@ -41,7 +41,7 @@
 
                     </div>
                     <div class="book-btn d-flex justify-content-center">
-                      <a href=" <?php printf('%s?trip_id=%s','select_seat.php',$trip['unique_id']); ?>" class="py-2 px-5">Book now <i class="fas fa-long-arrow-alt-right"></i></a>
+                      <a href=" <?php printf('%s?trip_id=%s','select_seat.php',$trip['unique_id']); ?>" id="bookBtn" class="py-2 px-5">Book now <i class="fas fa-long-arrow-alt-right"></i></a>
                     </div>
                   </div>
                 </div>

@@ -9,3 +9,8 @@
 <script src="./assets/js/owl.carousel.min.js"></script>
 <script src="./assets/js/aos.js" ></script>
 <script src="./assets/js/main.js"></script>
+<script src="./assets/js/book.js"></script>
+
+
+</body>
+</html>

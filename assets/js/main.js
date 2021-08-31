@@ -10,9 +10,13 @@ $(document).ready(function(){
 		
 	});
 
+
+
  	// AOS
 	AOS.init();
 });
+
+
 
 const wholeBus = document.querySelector('.whole-bus');
 const seats = document.querySelectorAll('.bus-row .seat:not(.booked)');
