@@ -3,7 +3,7 @@
     <div class="row">
       <div class="col-md-12">
         <form>
-          <input type="text" class="form-control" name="" id="ticket_price"  value="<?= $id['boarding_price'] ?>">
+          <input type="text" class="form-control" name="" id="ticket_price"  value="<?= $trip_id['boarding_price'] ?>">
         </form>
         <div class="seat-color mb-3 mt-2">
             <div class=" py-2 px-1 ">
@@ -23,4 +23,4 @@
     </div>
   </div>
 </section>
-<?= $id['boarding_price'] ?>
+<?= $trip_id['boarding_price'] ?>
