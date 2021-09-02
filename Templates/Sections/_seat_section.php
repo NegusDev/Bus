@@ -2,7 +2,14 @@
           <div class="container">
             <div class="row ">
               <div class="col-12">
-                <p class="text">You have selected <span id="count">0</span> seats for Ugx <span id="total" >0</span></p>
+              <div class="proceed">
+              <form method="POST"> 
+                <input type="hidden" name="trip" value="<?= $trip['trip_id'] ?>">
+                <input type="hidden" name="bus" value="<?= $trip['bus_id'] ?>">
+                <p class="text">You have selected</p>
+                <textarea class="count" id="count" name="seats">0</textarea> 
+                <p>seats for Ugx</p>
+                <textarea class="total" name="price" id="total">0</textarea>
                 <div class="whole-bus mt-4 ">
                    <div class="row-header d-flex justify-content-around align-items-center mb-0 mt-3">
                     <p class="bg-danger text-center">RIGHT ROW</p>
@@ -136,7 +143,10 @@
               </div>
             </div>
             <div class="book-btn d-flex justify-content-center">
-              <a href="payment.php" class="py-2 px-5">Next<i class="fas fa-long-arrow-alt-right ms-2"></i></a>
+              <button type="submit" name="next" id="buttonPay" class="py-2 px-5">Next<i class="fas fa-long-arrow-alt-right ms-2"></i></button>
+            </div>
+            </form>
             </div>
           </div>
-        </section>
+          
+</section>

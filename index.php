@@ -2,6 +2,7 @@
 
 include_once('Config.php');
 
+
 $trips = $Bus->getAllBusTrip();
 
 $View->header();

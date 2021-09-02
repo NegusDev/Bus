@@ -1,7 +1,7 @@
  <header id="header">
           <div class="strip d-flex justify-content-start align-items-center ">
               <div class="back-select  align-items-center">
-                <a class="py-2 px-3" href="select-seat.html"><i class="fas fa-long-arrow-alt-left"></i></a>
+                <a class="py-2 px-3" href="./select-seat.php"><i class="fas fa-long-arrow-alt-left"></i></a>
               </div>
               <div class="">
                 <div class="location-seat d-flex justify-content-center">

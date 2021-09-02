@@ -1,8 +1,12 @@
 <?php
 include ('Config.php');
+include ('Controllers/Requests.php');
 
-$bus_id = (int) $_GET['trip_id'];
-$trip_id = $Bus->getBusById($bus_id);
+$trip_id = (int) $_GET['trip_id'];
+$trip = $Bus->getBusById($trip_id);
+
+
+
 
 $View->header();
 include ('Templates/Sections/_select_Seat_header.php');

@@ -21,7 +21,7 @@
                     <li class="m-1">John Doe</li>
                   </ul>
                   <hr class="m-0">
-                  <p class="d-flex justify-content-end total">Total: UGX<span>15,000</span></p>
+                  <p class="d-flex justify-content-end total">Total: UGX<span><?= $pay['total_price']  ?></span></p>
                 </div>
 
                

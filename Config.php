@@ -6,7 +6,8 @@ include('System/dbc.php');
 // Models 
 include(BASE_DIR . '/System/Classes/View.class.php');
 include(BASE_DIR . '/System/Classes/Bus.class.php');
-// include(BASE_DIR . '/System/Classes/Seat.class.php');
+include(BASE_DIR . '/System/Classes/Requests.class.php');
 
 $View = new View();
 $Bus = new Bus();
+$Requests = new Requests();
