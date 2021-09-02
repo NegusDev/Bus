@@ -16,7 +16,7 @@ class Requests {
     // GET PENDING REQUESTS BY ID
     public function getRequestsById(int $request_id):array {
         global $dbc;
-        $sql = "SELECT * FROM `requests` WHERE `unique_id` = $request_id";
+        $sql = "SELECT * FROM `requests` travel_info WHERE `unique_id` = $request_id";
         $result = $dbc->query($sql) or die($dbc->error);
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {

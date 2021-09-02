@@ -15,13 +15,18 @@
                     <h6>Kampala to Gulu, Tuesday</h6>
                     <h6>Gagga Coaches at 09:45AM</h6>
                   </div>
-                  <p class="text-black-50  mb-0">1 person travelling</p>
-                  <hr class="m-0">
+                  <?php if( $pay['total_seats'] == "1" ):?>
+                  <p class="text-black-50  mb-0"><?= $pay['total_seats']  ?> person travelling</p>
+                  <?php else: ?>
+                    <p class="text-black-50  mb-0"><?= $pay['total_seats']  ?> people travelling</p>
+                  <?php endif;  ?>
+                  
+                  <!-- <hr class="m-0">
                   <ul class="mb-0">
                     <li class="m-1">John Doe</li>
-                  </ul>
+                  </ul> -->
                   <hr class="m-0">
-                  <p class="d-flex justify-content-end total">Total: UGX<span><?= $pay['total_price']  ?></span></p>
+                  <p class="d-flex justify-content-end totals">Total: UGX<span><?= $pay['total_price']  ?></span></p>
                 </div>
 
                
