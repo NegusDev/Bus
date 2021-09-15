@@ -18,7 +18,7 @@ $(document).ready(function(){
 
 
 const wholeBus = document.querySelector('.whole-bus');
-const seats = document.querySelectorAll('.bus-row .seat:not(.booked)');
+const seats = document.querySelectorAll('.seat:not(.booked)');
 const count = document.getElementById('count');
 const total = document.getElementById('total'); 
 const amount = document.getElementById('ticket_price');
@@ -30,11 +30,13 @@ let ticketPrice = +amount.value;
 
 // UPDATE TOTAL AND COUNT ID
 function updateSelectedcount() {
-	const selectedSeats = document.querySelectorAll('.bus-row .seat.selected');
+	const selectedSeats = document.querySelectorAll('.whole-bus .seat.selected');
 
+	let seatIds = [];
 
 // STORING INTO LOCAL STORAGE
 	const seatIndex = [...selectedSeats].map(function(seat) {
+		seatIds.push(seat.getAttribute('value'));
 		return [...seats].indexOf(seat);
 	});
 	
@@ -44,6 +46,9 @@ function updateSelectedcount() {
 
 	count.innerText = selectedSeatsCount;
 	total.innerText = selectedSeatsCount * ticketPrice;
+
+	document.getElementById("selected_seats").setAttribute('value', seatIds.toString());
+
 }
 
 
