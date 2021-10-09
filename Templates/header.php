@@ -19,9 +19,9 @@
    <main id="main" >
     <div class="row">
       <div class="col-lg-2 ">
-        <nav class=" navbar navbar-expand-md">
+        <nav class=" navbar navbar-expand-md bg-default">
         <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="sidebar_inner">
+        <div class="sidebar_inner bg-default">
           <div class="close">
             <i class="fas fa-times font-size-20" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-hidden="true"></i>
           </div>

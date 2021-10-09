@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: var(--body-font);
+  /* font-family: var(--body-font); */
   letter-spacing: 2px;
   font-size: var(--normal-font-size);
   color: var(--text-color);
@@ -125,7 +125,6 @@ img {
   position: fixed;
   left: 0;
   top: 0;
-  background: var(--primary-color);
   z-index: 999;
   transition: all 0.3s ease;
 }
@@ -180,8 +179,12 @@ img {
   display: block;
 }
 
+.bg-default {
+  background: var(--gradient);
+}
+
 #header {
-   background: var(--primary-color);
+
    overflow: hidden;
 }
 
@@ -261,6 +264,9 @@ img {
 }
 
 @media only screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
 
   .navbar-toggler {
     display: block;
@@ -313,14 +319,15 @@ img {
   display: block;
 }
 .toggle-btn {
+  width: 50px;
+  height: 50px;
   border: 1px solid var(--border-color);
   background: var(--secondary-color);
   box-shadow: var(--box-shadow);
-  border-radius: 10px;
   color: #fff;
 }
 .toggle-btn .fas {
-  padding:.7rem 1rem;
+  /* padding:.7rem 1rem; */
 }
 .form {
   display: none;
@@ -328,10 +335,8 @@ img {
 .form-search {
   /*border: 1px solid black;*/
   text-align: left;
-  padding: 20px;
   box-shadow: var(--box-shadow);
   background: #fff;
-  border-radius: 16px;
 }
 .form-button{
   margin-top: 5px;
@@ -344,15 +349,12 @@ img {
   font-weight: 700;
   font-size: 14px;
   margin: 0;
-  font-family: var(--title-color);
 }
 .form-search input {
   padding: 10px auto;
   border: none;
   background: transparent;
-  width: 80%;
   font-size: 16px;
-  font-family: var(--title-font);
   text-transform: capitalize;
   border-radius: unset;
   border-bottom: 1px solid #767676;
@@ -362,22 +364,24 @@ img {
   outline: transparent;
 }
 .submit-button {
-  padding: .4rem .5rem;
-  border-radius: 10px;
   background: var(--secondary-color);
   border: none;
   color: #fff;
-  font-size: .8rem;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  box-shadow: var(--box-shadow);
+
+}
+button.book-btn  {
+  background: var(--secondary-color);
+  color: #fff;
+  font-family: sans-serif;
+ border-radius: 22px;
+ border-style: unset;
 
 }
 .busBox {
   position: relative;
   overflow: hidden;
   clear: both;
-  border-radius: 1rem;
+  /* border-radius: ; */
   box-shadow: var(--box-shadow),
               -8px -8px 8px 0 rgba(255,255,255,0.5);
 
@@ -389,38 +393,10 @@ img {
   grid-gap: 10px;
 
 }
-.bus-name h4{
-  /*background: var(--secondary-color);*/
-  font-family: sans-serif;
-  letter-spacing: unset;
-}
-
-.bus-info h4 {
-  font-size: 20px;
-}
-.pay {
-  font-size: 18px;
-  font-weight: bolder;
-  letter-spacing: unset;
-}
 .trip {
   display: grid;
   grid-template-columns: 30% 70%;
   grid-gap: 6px;
-}
-.busImg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-.busImg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }
 .location {
   margin: .7rem 0 0 0 ;
@@ -446,31 +422,12 @@ img {
 
 }
 .departs,.seats {
-  position: relative;
-  color: #000;
-  text-align: center;
-  margin:0 10px ;
-  letter-spacing: unset;
-  font-family: sans-serif;
-  border-radius: 10px;
   background: var(--gradient);
 
 }
-.departs p,.seats p {
-  font-size: 14px;
-  padding: 5px ;
-}
 .book-btn {
-  margin-top: 10px;
-  /*background: var(--secondary-color);*/
-  /*width: 75%;*/
-}
-.book-btn a {
-   background: var(--secondary-color);
-   color: #fff;
-   font-family: sans-serif;
-  border-radius: 22px;
-  border-style: unset;
+  background: var(--secondary-color);
+  color: #fff;
 
 }
 .book-btn button {
