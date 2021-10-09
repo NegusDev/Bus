@@ -326,9 +326,6 @@ img {
   box-shadow: var(--box-shadow);
   color: #fff;
 }
-.toggle-btn .fas {
-  /* padding:.7rem 1rem; */
-}
 .form {
   display: none;
 }
@@ -541,11 +538,11 @@ button.book-btn  {
   width:10%;
 }
 
-.column {
+/* .column { */
    /*background: var(--primary-color);*/
    /*margin-left: 5px;*/
    /*margin-right: 5px;*/
-}
+/* } */
 .column .seat {
   /*padding: 6px 8px;*/
   background: #ccc;
@@ -654,10 +651,10 @@ p.text textarea {
     font-weight: bold;
 
 }
-.pay-methods button i {
+/* .pay-methods button i {
 
     
-}
+} */
 
 
 
