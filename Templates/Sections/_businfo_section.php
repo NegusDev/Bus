@@ -5,7 +5,7 @@
     <div class="row my-2">
       <div class="col-12 col-md-4">
         <?php foreach($trips as $trip) { ?>
-        <div class=" busBox py-3 px-2 m-3">
+        <div class=" busBox py-3 px-2 m-3 rounded-2">
                 <div class="bus-info">
                   <div class="bus-name">
                       <h6 class="text-capitalize fw-bold"><?= $trip['bus_name']?></h6>
@@ -16,7 +16,9 @@
                   <hr class="m-0">
               
                 <div class="trip-info">
-      
+                  <div class="location d-flex justify-content-center align-items-center">
+                    <small class="text-capitalize fw-bolder">bus park: kisenyi bus terminal</small>
+                  </div>
                   <div class="location d-flex justify-content-between text-capitalize">
                     <p class="from fw-bold"><i class="fas fa-map-marker-alt me-2"></i><?= $trip['from_city']?></p>
                     <p class="transit"><i class="fas fa-long-arrow-alt-right"></i></p>

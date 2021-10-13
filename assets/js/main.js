@@ -1,13 +1,15 @@
 $(document).ready(function(){
 	$('.search-bar').click(function(){
-		// $('#form').slideDown("slow");
+		$('#form').slideDown("slower");
 		
-			$('.form').css('display', 'block');
-			// console.log("uooo");
-		
+			// $('.form').css('display', 'block');
 
 		
 	});
+	// $('.submit-button').click(function(){
+	// 	$('.form').css('display', 'none');
+
+	// });
 
 
 

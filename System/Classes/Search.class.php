@@ -20,9 +20,9 @@ class Search {
     }
 
     public function viewAllSearched(array $search):string {
-        $html = '<div class="col-12 col-md-4">';
+        $html = '<div class="col-12 col-md-4 text-center">';
         if (empty($search)) {
-            $html .= '<span>No results found</span>';
+            $html .= '<span class="fw-b">No results found</span>';
         }
         else {
             foreach ($search as $s) {

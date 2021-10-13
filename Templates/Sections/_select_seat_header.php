@@ -1,4 +1,4 @@
- <header id="header">
+ <header id="header" class="bg-default">
   <div class="strip d-flex justify-content-start align-items-center  ">
       <div class="back-home ">
         <a class="" href="index.php"><i class="fas fa-long-arrow-alt-left"></i></a>

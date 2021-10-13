@@ -8,9 +8,9 @@
                   </button>
 
                   <form method="GET" class="form my-2" id="form" action="search.php">
-                    <div class="form-search rounded-2 py-3 px-2">
+                    <div class="form-search rounded-2 py-3 px-2 ">
                      <div class="form-floating">
-                      <input type="text" class="form-control" name="from" id="from" placeholder="Kampala">
+                      <input type="text" class="form-control rounded-2" name="from" id="from" placeholder="Kampala">
                       <label for="from" class="form-label">from</label>
                      </div>
                      <div class="mb-3 form-floating">
@@ -19,7 +19,7 @@
                      </div>
                      <div class="mb-3 form-floating">
                         <input type="date" class="form-control" name="date" id="to" >
-                        <label for="date" class="form-label">journey date</label>
+                        <label for="date" class="form-label">journey date(option)</label>
                       </div>
                       <div class="my-2 d-flex justify-content-center">
                         <button type="submit"  class="btn submit-button form-control w-100 text-capitalize" id="bookBtn">Search buses</button>

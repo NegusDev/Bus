@@ -10,7 +10,7 @@
   --border-color:#201f1f17 ;
   --gradient:linear-gradient(90deg,#4458dc 0%, #844fee 100%);
   --shadow:0px 10px 30px rgba(118,85,255,0.3);
-  --box-shadow: 0px 3px 30px  rgba(57,56,61,0.205),
+  --box-shadow: 0px 3px 10px  rgba(57,56,61,0.205),
                 0px -3px 12px  rgba(57,56,61,0.205);
 
   /*fonts*/
@@ -378,11 +378,7 @@ button.book-btn  {
   position: relative;
   overflow: hidden;
   clear: both;
-  /* border-radius: ; */
-  box-shadow: var(--box-shadow),
-              -8px -8px 8px 0 rgba(255,255,255,0.5);
-
-  
+  box-shadow: var(--box-shadow);  
 }
 .bus-info {
   display: grid;
@@ -444,7 +440,7 @@ button.book-btn  {
 }
 .back-home a{
   /*background: red;*/
-  color: #ccc;
+  color: #fff;
   font-size: 25px;
 
   
@@ -452,7 +448,7 @@ button.book-btn  {
 }
 .back-select a{
   /*background: red;*/
-  color: #ccc;
+  color: #fff;
   font-size: 25px;
 
   
@@ -462,7 +458,7 @@ button.book-btn  {
   font-size: 16px;
   padding: 12px 10px 0 10px;
   font-family: var(--title-font) !important;
-  color: #ccc;
+  color: #fff;
 
 }
 .location-seat p {
@@ -522,27 +518,12 @@ button.book-btn  {
   /* overflow: hidden;  */
 
 }
-/* .whole-bus > div {
-  background: var(--secondary-color);
-  height: 60px;
-  margin: 1px 0;
-  padding: 5px 10px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 6px;
-}  */
 .seat-rows .col-1{
   width:15%;
 }
 .seat-rows .col-2{
   width:10%;
 }
-
-/* .column { */
-   /*background: var(--primary-color);*/
-   /*margin-left: 5px;*/
-   /*margin-right: 5px;*/
-/* } */
 .column .seat {
   /*padding: 6px 8px;*/
   background: #ccc;
