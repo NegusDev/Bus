@@ -1,19 +1,9 @@
 $(document).ready(function(){
-	$('.search-bar').click(function(){
+	$('.search-bar button').click(function(){
 		$('#form').slideDown("slower");
-		
 			// $('.form').css('display', 'block');
-
-		
 	});
-	// $('.submit-button').click(function(){
-	// 	$('.form').css('display', 'none');
 
-	// });
-
-
-
- 	// AOS
 	AOS.init();
 });
 
