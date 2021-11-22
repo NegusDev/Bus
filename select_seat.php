@@ -8,7 +8,9 @@ $no_of_Seats = 72;
 $seats = [];
 
 for ($i=1; $i<=$no_of_Seats; $i++) {
-    $seats[$i] = ['id'=> $i, 'status'=> false];  
+    $seats[$i] = [
+        'id'=> $i, 'status'=> false
+    ];  
 }
 
 $seats[35]['status'] = true;

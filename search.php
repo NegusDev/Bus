@@ -1,5 +1,4 @@
 <?php
-
 include_once('Config.php');
 include('Controllers/Search.php');
 
