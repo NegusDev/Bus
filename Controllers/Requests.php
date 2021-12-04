@@ -4,9 +4,9 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
 
     $error = '';
     if (isset($_POST['next'])) {
-        $random_id = rand(time(),2000);
+        $ticket_id = rand(time(),2000);
         $data = [
-            "unique_id" => $random_id,
+            "unique_id" => $ticket_id,
             "trip_id" => $_POST['trip'],
             "bus_id"  => $_POST['bus'],
             "selected_Seats"  => $_POST['selected_seats'],
